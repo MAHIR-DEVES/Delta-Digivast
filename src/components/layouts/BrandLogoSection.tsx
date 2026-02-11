@@ -28,11 +28,28 @@ export default function BrandLogoSection() {
           </p>
         </div>
 
-        {/* Logo Slider */}
+        {/* Logo Slider - Right to Left */}
         <div className="overflow-hidden relative">
-          <div className="flex gap-16 items-center animate-scroll hover:[animation-play-state:paused]">
+          <style jsx>{`
+            @keyframes scrollRTL {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+
+            .animate-scroll-rtl {
+              animation: scrollRTL 30s linear infinite;
+              width: fit-content;
+              display: flex;
+            }
+          `}</style>
+
+          <div className="animate-scroll-rtl hover:[animation-play-state:paused]">
             {[...logoData, ...logoData].map((item, i) => (
-              <div key={i} className="relative h-14 w-32 flex-shrink-0">
+              <div key={i} className="relative h-14 w-32 flex-shrink-0 mx-4">
                 <Image
                   src={item.logo}
                   alt={item.alt}
