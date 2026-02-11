@@ -1,10 +1,11 @@
-import { Hero1 } from '@/components/hero1';
+import BrandLogoSection from '@/components/layouts/BrandLogoSection';
+import { Hero } from '@/components/layouts/hero';
 import React from 'react';
 
 export default function HomePage() {
   return (
     <div>
-      <Hero1
+      <Hero
         heading="Build Your Agency Website"
         description="We create modern, scalable and beautiful web applications."
         image={{
@@ -12,6 +13,7 @@ export default function HomePage() {
           alt: 'Agency Hero Image',
         }}
       />
+      <BrandLogoSection></BrandLogoSection>
     </div>
   );
 }

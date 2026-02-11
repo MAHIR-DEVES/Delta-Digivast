@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
-interface Hero1Props {
+interface HeroProps {
   badge?: string;
   heading: string;
   description: string;
@@ -26,7 +26,7 @@ interface Hero1Props {
   className?: string;
 }
 
-const Hero1 = ({
+const Hero = ({
   badge = 'Your Website Builder',
   heading = 'Blocks Built With Shadcn & Tailwind',
   description = 'Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.',
@@ -45,7 +45,7 @@ const Hero1 = ({
     alt: 'Hero section demo image showing interface components',
   },
   className,
-}: Hero1Props) => {
+}: HeroProps) => {
   return (
     <section className={cn('py-32', className)}>
       <div className="container mx-auto">
@@ -90,4 +90,4 @@ const Hero1 = ({
   );
 };
 
-export { Hero1 };
+export { Hero };
