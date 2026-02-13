@@ -1,5 +1,3 @@
-'use client';
-
 import { Code, Cog, PenTool, Shrub } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -41,7 +39,7 @@ const ServiceSection = ({ className }: ServiceSectionProps) => {
   ];
 
   return (
-    <section className={cn('py-32', className)}>
+    <section className={cn('py-10', className)}>
       <div className="container mx-auto">
         <div className=" space-y-12">
           <div className="space-y-4 text-center">

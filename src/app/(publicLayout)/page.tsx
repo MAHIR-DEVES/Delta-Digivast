@@ -1,4 +1,7 @@
+import { Blog } from '@/components/layouts/blog';
 import BrandLogoSection from '@/components/layouts/BrandLogoSection';
+import ClientReview from '@/components/layouts/ClientReview';
+import { Contact2 } from '@/components/layouts/contact2';
 import { Hero } from '@/components/layouts/hero';
 import HeroVideo from '@/components/layouts/HeroVideo';
 import { ServiceSection } from '@/components/layouts/ServiceSection';
@@ -19,6 +22,9 @@ export default function HomePage() {
       <BrandLogoSection></BrandLogoSection>
       <HeroVideo></HeroVideo>
       <ServiceSection></ServiceSection>
+      <ClientReview></ClientReview>
+      <Blog></Blog>
+      <Contact2></Contact2>
     </div>
   );
 }
